@@ -10,16 +10,11 @@
   font-display: block;
 }
 
-
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Lato, Arial, Helvetica, sans-serif;
 
-}
-
-.fixed{
-position: fixed;
 }
 
 .holder{
@@ -33,29 +28,26 @@ position: fixed;
 
 .icon-shopping-cart:before,.icon-mensaje:before,.icon-search:before,.icon-user:before{
   font-family: 'icomoon';
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 0 auto;
+  color: rgb(86, 86, 86);
 
 }
 
 
 .icon-shopping-cart:before {
   content: "\e900";
-  color: #ccc;
   
 }
 .icon-mensaje:before {
   content: "\e906";
-  color: #ccc;
 }
 .icon-search:before {
   content: "\e901";
-  color: #ccc;
+  font-size: 0.8em;
 }
 .icon-user:before {
   content: "\e902";
-  color: #ccc;
-
 }
 
 /* FIN ICONOS */
@@ -64,14 +56,9 @@ position: fixed;
 
 
 .topnav {
-  overflow: hidden;
-  background-color: white;
-  float: left;
   width: 100%;
-  padding-bottom: 2px;
-  display: flex;
-  flex-direction: row;
-
+  height: 100%;
+  float: left;
 }
 
 .topnav a {
@@ -84,7 +71,6 @@ position: fixed;
   font-weight: bold;
   margin: 12px;
   padding: 5px;
-
 }
 
 .topnav a:hover {
@@ -105,66 +91,86 @@ position: fixed;
   margin: 12px;
   padding: 5px;
   font-size: 12px;
- border-radius: 5px;
- border: 1px solid;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+.search {
+  height: 100%;
+}
+
+.search input{
+  width: 20%;
+  padding-left: 16px;
+}
+
+.search span {
+  position: relative;
+  right: 40px;
+  cursor: pointer;
 }
 
 .header{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 100%;
-  
+  height: 200px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .chat{
-  width: 20%;
-  padding: 0;
-  margin:0;
-
+  display: flex;
+  align-items: center;
+  font-size: 0.7em;
 }
 
 .iconos{
-  width: 
-
+  display: flex;
+  align-items: center;
 }
-
 
 .subheader{
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   width: 100%;
   height: 100%;
   margin:0;
   padding: 0;
-
 }
 
 
 .header img{
-  width: 3%;
+  width: 65px;
 }
 
 
 .banner{
+  background-image: url('../img/hero-banner.jpg');
+  background-size: contain;
   width: 100%;
+  height: 125px;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
 }
 
-.banner img{
-  width: 100%;
-}
+
 
 .banner h1{
   color: white;
-  position: absolute;
+  margin-left: 2%;
   font-size: 3em;
   text-align: left;
-  top: 70px;
-
 }
 
 
@@ -188,18 +194,20 @@ position: fixed;
   color: white;
   position: relative;
   text-align: center;
-  font-weight: lighter;
-  bottom: 54px;
+  font-weight: bold;
+  bottom: 50px;
 }
 
 
 .botonera{
   background-color: #f8f8f8;
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 100%;
+  display: flex; /*similar a display block*/
+  padding: 0 5% 0 5%;
 
 }
 
@@ -211,14 +219,7 @@ position: fixed;
   position: relative;
   padding: 10px;
   margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-
 }
-
-
 
 .botonera a{
   text-decoration-line: none;
@@ -256,21 +257,11 @@ position: fixed;
 
 }
 
-.ribbon p{
-  position: relative;
-  color: white;
-  bottom: 8px;
-  left: 35px;
-  font-size: 0.8em;
-  font-weight: 500;
-}
-
 .ribbon:after {
-      content: "";
+      content: "DOORBUSTER";
       position: absolute;
       color: white;
       padding-left: 25px;
- 
       font-size: 0.8em;
       left: 0;
       bottom: 0;
@@ -292,6 +283,9 @@ position: fixed;
   
 }
 
+.info:last-child {
+  border-right: none;
+}
 
 
 .info img{
@@ -305,11 +299,9 @@ position: fixed;
   border-right:  1px solid #ccc;
 }
 
-.info:last-child{
+.productos:last-child {
   border-right: none;
 }
-
-
 
 .info h2{
   color: #3e8ddd;
@@ -395,7 +387,7 @@ position: fixed;
 
 .boton{
 
-  background-color: #1976a1;
+  background-color: #3e8ddd;
   font-size: 1em;
   color: white;
   border-radius: 8px;
@@ -403,13 +395,13 @@ position: fixed;
   padding: 5px;
   border: none;
   width: 70%;
-  border: 2px solid #1976a1;
+  border: 2px solid #3e8ddd;
 }
 
 .boton:hover {
       background-color: white;
-      color: #1976a1;
-      border: 2px solid #1976a1;
+      color: #008CBA;
+      border: 2px solid #008CBA;
       cursor: pointer;
  }
 
@@ -457,7 +449,7 @@ input[type="radio"]:checked ~ label {
 
 
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -477,6 +469,6 @@ input[type="radio"]:checked ~ label {
     display: block;
     text-align: left;
   }
-}
+} */
 
 /* FIN MEDIAQUERY - RESPONSIVE*/
