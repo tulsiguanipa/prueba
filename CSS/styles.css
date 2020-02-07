@@ -192,54 +192,6 @@ position: fixed;
 }
 
 
-/*.botonera{
-  background-color: #f8f8f8;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  height: 100%;
-
-}
-
-.botonera img{
-  width: 50px;
-}
-
-.botonera div{
-  position: relative;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: 0;
-
-}
-
-
-
-.botonera a{
-  text-decoration-line: none;
-  font-size: 0.8em;
-  text-align: center;
-  color: black;
-  width: 10px;
-}
-
-.botonera a:hover{
-  color: #ff6a00;
-
-}
-
-.botonera div:hover{
-  border-bottom: 3px solid #ff6a00;
-
-}
-
-*/
-
-
 .botonera{
   display: flex;
   background-color: #f8f8f8;
@@ -287,12 +239,8 @@ position: fixed;
 }
 
 .item:hover p{
-  
-
   cursor: pointer;
-
 }
-
 
 
 
@@ -387,12 +335,21 @@ position: fixed;
   margin:0;
 }
 
+
+.info h5{
+  font-weight: bold;
+  padding: 0;
+  margin: 1px;
+  font-size: 1em;
+
+}
+
 .info h4{
   font-weight: lighter;
   padding: 0;
   color: grey;
   margin:0;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 
 .info p small{
