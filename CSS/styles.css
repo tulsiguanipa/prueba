@@ -18,7 +18,7 @@ body {
 }
 
 .holder{
-  max-width: 1080px;
+  max-width: 1250px;
   margin: 0 auto; 
   padding-top: 10px;
 }
@@ -33,6 +33,12 @@ body {
 
 }
 
+.icon-shopping-cart:hover,.icon-mensaje:hover,.icon-user:hover{
+
+  color: #3e8ddd;
+  cursor: pointer;
+
+}
 
 .icon-shopping-cart:before {
   content: "\e900";
@@ -56,7 +62,7 @@ body {
 
 .topnav {
   width: 100%;
-  height: 100%;
+  height: 30%;
   float: left;
 }
 
@@ -101,6 +107,7 @@ body {
 .search input{
   width: 20%;
   padding-left: 16px;
+  border-color: grey;
 }
 
 .search span {
@@ -124,6 +131,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+  padding-right: 20px;
 }
 
 .chat{
@@ -135,7 +143,10 @@ body {
 .iconos{
   display: flex;
   align-items: center;
+  padding-right: 10px;
+
 }
+
 
 .subheader{
   display: flex;
@@ -155,7 +166,8 @@ body {
 
 .banner{
   background-image: url('../img/hero-banner.jpg');
-  background-size: contain;
+  background-repeat:no-repeat;
+  background-size: auto;
   width: 100%;
   height: 125px;
   padding: 0;
@@ -180,8 +192,10 @@ body {
 
 .banner2{
   width: 100%;
-  height: 100%;
-  box-sizing: border-box
+  padding: 0;
+  margin: 0;
+
+
 
 }
 
@@ -193,8 +207,11 @@ body {
   color: white;
   position: relative;
   text-align: center;
-  font-weight: bold;
-  bottom: 50px;
+  font-weight: lighter;
+  bottom: 40px;
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -265,7 +282,7 @@ body {
 }
 
 .ribbon:after {
-      content: "DOORBUSTER";
+      content: "";
       position: absolute;
       color: white;
       padding-left: 25px;
@@ -278,6 +295,16 @@ body {
       border-top: 10px solid transparent;
       border-bottom: 10px solid transparent;
     }
+
+
+.ribbon p{
+  position: relative;
+  bottom: 8px;
+  color: white;
+  font-weight: 550;
+  font-size: 0.7em;
+  left: 40px;
+}
 
 /* FIN ETIQUETA RIBBON */
 
@@ -306,6 +333,25 @@ body {
   border-right:  1px solid #ccc;
 }
 
+
+.puntos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.puntos:last-child{
+  float: right;
+}
+
+.puntos .puntuacion{
+  padding-left: 5px;
+  font-size: 0.8em;
+  padding-top: 4px;
+}
+
+
+
 .productos:last-child {
   border-right: none;
 }
@@ -313,7 +359,7 @@ body {
 .info h2{
   color: #3e8ddd;
   font-weight: lighter;
-  padding: 50px 0 0 0;
+  padding: 20px 0 0 0;
   margin:0;
 }
 
@@ -335,7 +381,7 @@ body {
   font-weight: bold;
   padding: 0;
   margin: 1px;
-  font-size: 1em;
+  font-size: 0.8em;
 
 }
 
@@ -353,6 +399,7 @@ body {
   padding: 0 0 10px 0;
   margin:0;
   font-style: italic;
+  font-size: 0.8em;
 }
 
 .info p{
@@ -448,6 +495,7 @@ label {
 .clasificacion {
   direction: rtl;
   unicode-bidi: bidi-override;
+
 }
 
 label:hover,
