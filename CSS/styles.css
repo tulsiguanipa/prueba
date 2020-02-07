@@ -23,7 +23,6 @@ position: fixed;
 }
 
 .holder{
-
   max-width: 1080px;
   margin: 0 auto; 
   padding-top: 10px;
@@ -193,7 +192,7 @@ position: fixed;
 }
 
 
-.botonera{
+/*.botonera{
   background-color: #f8f8f8;
   width: 100%;
   display: flex;
@@ -209,12 +208,12 @@ position: fixed;
 
 .botonera div{
   position: relative;
-  padding: 10px;
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
+  padding: 0;
 
 }
 
@@ -237,6 +236,63 @@ position: fixed;
   border-bottom: 3px solid #ff6a00;
 
 }
+
+*/
+
+
+.botonera{
+  display: flex;
+  background-color: #f8f8f8;
+  width: 100%;
+  height: 50px;
+  justify-content: space-around;
+  direction-flex: row;
+
+}
+
+.item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration-line: none;
+  font-size: 0.8em;
+  text-align: center;
+  color: black;
+  width: auto;
+
+
+}
+
+.item p{
+  padding-left: 5px;
+  width: 50px;
+  font-weight: lighter;
+  font-size: 0.9em;
+
+
+}
+  
+
+
+.item img{
+  width: 50px;
+  cursor: pointer;
+}
+
+.item:hover{
+  border-bottom: 3px solid #ff6a00;
+  color:#ff6a00;
+  cursor: pointer;
+
+}
+
+.item:hover p{
+  
+
+  cursor: pointer;
+
+}
+
 
 
 
@@ -457,7 +513,7 @@ input[type="radio"]:checked ~ label {
 
 
 
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -477,6 +533,6 @@ input[type="radio"]:checked ~ label {
     display: block;
     text-align: left;
   }
-}
+}*/
 
 /* FIN MEDIAQUERY - RESPONSIVE*/
